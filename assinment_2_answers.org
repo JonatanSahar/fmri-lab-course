@@ -1,0 +1,12 @@
+#+title: Assignment_2_answers
+
+* slice time correction
+
+This function estimates by interpolation the scanned values in the different slices based on a defined reference slice (here we used slice no. 1). This is needed because of the accumulated time differences between slices which are scanned at the beginning of the volume and those scanned near the end of it, which create accumulated differences in the signal itself
+We've set the slice sequence to that given in scanParams.txt and set the other scan parameters as described.
+
+* realignment
+This function performs motion correction by applying rigid body transformations in six directions.
+
+* coregistration
+This function aligns all the slices to the AC-PC coordinates system by applying rigid body transformations in six direction.
